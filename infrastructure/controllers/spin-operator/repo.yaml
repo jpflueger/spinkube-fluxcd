@@ -1,0 +1,8 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: HelmRepository
+metadata:
+  name: spin-operator
+  namespace: spin-operator
+spec:
+  interval: 24h
+  url: oci://ghcr.io/spinkube/charts
